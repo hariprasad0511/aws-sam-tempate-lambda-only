@@ -1,0 +1,11 @@
+{
+    "author_name" : "Firstname Lastname",
+    "project_name" : "default_project_name",
+    "function_name" : "helloWorld",
+    "function_description" : "helloWorld function description",
+    "AWS_region" : "eu-west-1",
+    "S3_code_store_name_DEV" : "Mandatory to enter unique S3 bucket name for storing code in DEV Account",
+    "S3_code_store_name_PROD" : "Mandatory to enter unique S3 bucket name for storing code in PROD Account",
+    "aws_lambda_execution_role_arn_DEV" : "Mandatory to enter aws lambda execution RoleArn in DEV Account",
+    "aws_lambda_execution_role_arn_PROD" : "Mandatory to enter aws lambda execution RoleArn in PROD Account"
+}
