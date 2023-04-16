@@ -26,7 +26,7 @@ Resources:
       - x86_64
       # Use for X-Ray Tracing
       #Tracing: Active
-      Role : {{{{cookiecutter.aws_lambda_execution_role_arn_PROD}}}}
+      Role : {{cookiecutter.aws_lambda_execution_role_arn_PROD}}
       AutoPublishAlias : PROD
       Tags:
         PRODUCT: privisure
