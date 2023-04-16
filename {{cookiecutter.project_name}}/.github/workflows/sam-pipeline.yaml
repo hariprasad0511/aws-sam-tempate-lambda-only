@@ -28,7 +28,7 @@ jobs:
         run: sam build {{cookiecutter.function_name}} --use-container -t template-dev.yaml
       
       - name: Deploy sam-application to region {{cookiecutter.AWS_region}} # sam deploy
-        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name {{cookiecutter.function_name}} --s3-bucket {{cookiecutter.S3_code_store_name_DEV}} CAPABILITY_IAM --region {{cookiecutter.IAM_region}}
+        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name {{cookiecutter.function_name}} --s3-bucket {{cookiecutter.S3_code_store_name_DEV}} CAPABILITY_IAM --region {{cookiecutter.AWS_region}}
 
   PROD:
     needs: DEV
@@ -56,4 +56,4 @@ jobs:
         run: sam build {{cookiecutter.function_name}} --use-container -t template-prod.yaml
       
       - name: Deploy sam-application to region {{cookiecutter.AWS_region}} # sam deploy
-        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name {{cookiecutter.function_name}} --s3-bucket {{cookiecutter.S3_code_store_name_PROD}} CAPABILITY_IAM --region {{cookiecutter.IAM_region}}
+        run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name {{cookiecutter.function_name}} --s3-bucket {{cookiecutter.S3_code_store_name_PROD}} CAPABILITY_IAM --region {{cookiecutter.AWS_region}}
